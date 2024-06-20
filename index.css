@@ -114,7 +114,7 @@
     border-radius: 4px;
 }
 
-/* Search Bar, there's more searchBar code below, I too laze to combine them */
+/* TODO: Searchbar, there's more searchBar code below which conflicts*/
 .theme-dark [class^="searchBar"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -175,6 +175,7 @@
     box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 2px 10px 0 rgba(0,0,0,.2);
 }
 
+/* TODO: Footer conflict */
 .theme-dark [class^="footer"] {
     background-color: var(--footer);
     -webkit-box-shadow: inset 0 1px 0 rgba(47,49,54,.6);
@@ -248,7 +249,7 @@
     background-color: var(--feature-hover);
 }
 
-/* I think this part is so broke, I doubt this profile badges still works */
+/* TODO: I think this part is so broke, I doubt this profile badges still works */
 .theme-dark [class^="profileBadge"]  {
     background-repeat: no-repeat;
     background-size: contain;
@@ -290,7 +291,7 @@
     color: red;
 }
 
-/* Search Bar again*/
+/* TODO: Searchbar conflict*/
 .theme-dark [class^="searchBar"] [class^="searchBarComponent"] {
     width: 100%;
     height: 28px;
@@ -357,6 +358,7 @@
     color: red;
 }
 
+/* TODO: Footer conflict */
 .theme-dark [class^="body"], .theme-dark [class^="footer"] {
     background-color: var(--body-footer);
 }
@@ -400,3 +402,593 @@
     pointer-events: auto;
     -webkit-app-region: no-drag;
 }
+
+[class^="modalContent"] {
+    background-color: var(--background-primary);
+}
+
+/* TODO: Footer conflict */
+.theme-dark [class^="footer"] {
+    background-color: var(--background-text-area);
+}
+
+[class^="lookFilled"][class*="colorBrand"] {
+    color: #fff;
+    background-color: var(--lookFilled-colorBrand);
+}
+[class^="lookFilled"][class*="colorBrand"]:hover {
+    color: #fff;
+    background-color: var(--lookFilled-colorBrand-hover);
+}
+[class^="lookFilled"][class*="colorBrand"]:active {
+    color: #fff;
+    background-color: rgb(28, 207, 28);
+}
+
+[class^="lookFilled"][class*="colorPrimary"] {
+    color: #f6f6f7;
+    background-color: var(--colorPrimary);
+}
+[class^="lookFilled"][class*="colorPrimary"]:hover {
+    color: #f6f6f7;
+    background-color: var(--colorPrimary-hover);
+}
+[class^="lookFilled"][class*="colorPrimary"]:active {
+    color: #f6f6f7;
+    background-color: rgb(238, 54, 54);
+}
+
+[class^="actionIcon"] {
+    color: var(--interactive-normal);
+    transition: all 0.1s;
+}
+[class^="actionIcon"]:active {
+    color: rgb(69, 108, 235);
+}
+
+[class^="scroller"] {
+    background-color: var(--background-secondary);
+}
+
+.theme-dark [class^="separator"] {
+    background-color: var(--background-text-area);
+}
+
+
+ [class^="lookOutlined"][class*="colorGreen"] {
+    color: #fff;
+    border-color: var(--lookOutlined);
+    transition: all 0.1s;
+}
+
+[class^="lookFilled"][class*="colorGreen"] {
+    color: #fff;
+    border-color: var(--The-292929);
+    background-color: var(--The-292929);
+}
+[class^="lookFilled"][class*="colorGreen"]:hover {
+    color: #fff;
+    border-color: var(--The-292929);
+    background-color: var(--The-555555);
+}
+[class^="lookFilled"][class*="colorGreen"]:active {
+    color: #fff;
+    border-color: var(--The-292929);
+    background-color: var(--The-161616);
+}
+
+[class^="close"] {
+    height: 26px;
+    padding: 4px;
+    opacity: .5;
+    cursor: pointer;
+    border-radius: 3px;
+    color: var(--interactive-normal);
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+[class^="close"]:hover {
+    color: rgb(248, 54, 54);
+}
+
+[class^="settingsContent"] {
+    background-color: var(--background-primary);
+}
+
+/* TODO: Conflict with a lot of header classes */
+[class^="header"] {
+    background-color: var(--background-text-area);
+}
+
+[class^="content"] {
+    background-color: var(--background-primary);
+}
+
+[class^="perksModalContentWrapper"] {
+    background-color: var(--background-text-area);
+}
+
+/* TODO: What the actual nyanners is that SVG url */
+.theme-dark [class^="perksModal"] {
+    background-image: url(/assets/c486dc6….svg);
+    background-color: var(--background-text-area);
+}
+
+.theme-dark [class^="perk"] {
+    background-color: var(--background-tertiary);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+.theme-dark [class^="perk"]:hover {
+    background-color: var(--perk-hover);
+    transform: scale(1.1);
+}
+.theme-dark [class^="perk"]:active {
+    background-color: var(--perk-active);
+    transform: scale(1);
+}
+
+[class^="lookFilled"][class*="colorBrand"]:disabled {
+    background-color: var(--lookFilled-disabled);
+}
+
+.theme-dark [class^="errorState"] {
+    background-color: var(--background-primary);
+}
+
+/* TODO: Conflict with a lot of scroller classes */
+[class^="noResults"], [class^="scroller"] {
+    background-color: var(--background-secondary);
+}
+
+/* TODO: Conflict with a lot of footer classes */
+[class^="footer"] {
+    background-color: var(--background-text-area);
+}
+
+/* TODO: Conflict with a lot of container classes */
+[class^="container"] {
+    background-color: var(--background-text-area);
+}
+
+[class^="quickSelectPopoutOption"] {
+    background-color: var(--background-text-area);
+}
+
+[class^="root"] {
+    background-color: var(--background-secondary);
+}
+
+[class^="colorable"][class*="red"][class*="active"], [class^="colorable"][class*="red"]:hover {
+    background: rgb(158, 28, 28);
+}
+
+[class^="unread"] {
+    background-color: #7289DA;
+}
+
+
+/* TODO: This is so not working */
+[class^="modeConnected"] [class^="name"], [class^="modeConnected"]:hover [class^="name"], [class^="modeSelected"] [class^="name"], [class^="modeSelected"]:hover [class^="name"], [class^="modeUnread"] [class^="name"], [class^="modeUnread"]:hover [class^="name"], [class^="notInteractive"][class^="modeConnected"] [class^="name"], [class^="notInteractive"][class^="modeSelected"] [class^="name"] {
+    color: #7289DA;
+}
+[class^="modeConnected"]:hover [class^="name"], [class^="modeConnected"]:hover [class^="name"], [class^="modeSelected"]:hover [class^="name"], [class^="modeSelected"]:hover [class^="name"], [class^="modeUnread"]:hover [class^="name"], [class^="modeUnread"]:hover [class^="name"], [class^="notInteractive"][class^="modeConnected"]:hover [class^="name"], [class^="notInteractive"][class^="modeSelected"]:hover [class^="name"] {
+    color: #c1cefd;
+}
+[class^="modeSelected"] [class^="name"] {
+    color: #fff;
+}
+
+[class^="unreadMentionsBar"] {
+    background-color: #7289DA;
+}
+[class^="unreadMentionsBar"]:active {
+    background-color: #849fff;
+}
+
+[class^="connectedAccount"]:hover {
+    background-color: var(--connectedAccount-hover);
+}
+
+[class^="resultsGroup"] {
+    background-color: var(--background-text-area);
+}
+
+.theme-dark [class^="option"]:after {
+    background: var(--background-text-area);
+}
+
+.theme-dark [class^="emojiSection"] {
+    background: var(--background-text-area);
+}
+.theme-dark [class^="guildSection"] {
+    background: var(--background-text-area);
+}
+
+[class^="circleIconButton"] {
+    color: rgb(148, 148, 148);
+    background: var(--background-secondary);
+}
+[class^="circleIconButton"][class*="selected"] {
+    color: #fff;
+    background-color: var(--circleIconButton-selected);
+}
+[class^="circleIconButton"]:active {
+    background-color: var(--circleIconButton-active);
+}
+
+/* TODO: Scroller conflict */
+[class^="scroller"] {
+    background-color: var(--background-text-area);
+}
+
+[class^="search"] [class^="searchBox"] {
+    background-color: var(--background-text-area);
+}
+
+.theme-dark [class^="card"], .theme-dark [class^="iconMask"] {
+    background-color: var(--background-secondary);
+}
+
+/* TODO: Content conflict */
+[class^="content"] {
+    background-color: var(--background-text-area);
+}
+
+[class^="footerTitle"] {
+    color: #fff;
+}
+
+/* TODO: Container Conflict */
+[class^="container"]:hover {
+    background-color: var(--The-82);
+}
+[class^="container"] {
+    background-color: var(--The-58);
+}
+
+[class^="text"] {
+    color: #fff;
+}
+
+/* TODO: Literally more container conflict again */
+[class^="container"]:active {
+    background-color: var(--The-126);
+}
+
+/* TODO: Title and Subtitle Conflict */
+[class^="title"] {
+    color: #fff;
+}
+[class^="subtitle"] {
+    color: var(--subtitle);
+}
+
+[class^="templatesList"] {
+    margin-top: -1px;
+}
+
+/* TODO: Content conflict */
+[class^="content"] {
+    border-radius: 0;
+}
+
+[class^="lookFilled"][class*="colorGrey"] {
+    color: #fff;
+    background-color: var(--The-59);
+}
+[class^="lookFilled"][class*="colorGrey"]:hover {
+    background-color: var(--The-83);
+}
+[class^="lookFilled"][class*="colorGrey"]:active {
+    background-color: rgb(15, 85, 15);
+}
+
+[class^="optionsList"] {
+    margin-top: 0px;
+    padding: 0 16px 8px;
+}
+
+/* Title and Subtitle option */
+[class^="title"] {
+    color: #fff;
+}
+[class^="subtitle"] {
+    color: var(--The-163);
+}
+
+[class^="skip"] {
+    color: var(--The-163);
+}
+
+[class^="backButton"] {
+    color: #fff;
+}
+
+/* TODO: Footer conflict */
+[class^="footer"] {
+    border-radius: 0 0 0px 0px;
+}
+
+[class^="colorDefault"][class^="focused"] {
+    background-color: var(--background-primary);
+    color: #fff;
+}
+[class^="colorDefault"][class^="focused"]:active {
+    background-color: var(--background-text-area);
+    color: #fff;
+}
+[class^="colorDefault"][class^="focused"]:focus {
+    background-color: var(--background-text-area);
+    color: #fff;
+}
+
+/* TODO: Look into these powercord stuff and possibly remove them? */
+.powercord-toast .header{
+    background-color: var(--background-primary) !important;
+}
+.powercord-toast .contents{
+    background-color: var(--background-primary) !important;
+    border-radius: 0% !important;
+}
+.powercord-toast .buttons{
+    background-color: var(--background-primary);
+}
+.powercord-toast .contents .inner{
+    background-color: var(--background-tertiary) !important;
+}
+.powercord-toast .buttons button[class*=lookGhost-]{
+    background-color: var(--background-text-area);
+    color: #fff;
+}
+.powercord-toast .buttons button[class*=lookGhost-]:active{
+    background-color: #7289DA;
+}
+
+[class^="lookOutlined"][class*="colorGreen"]:hover {
+    background-color: rgba(28, 207, 28, 0.103);
+    border-color: rgb(20, 148, 20);
+}
+[class^="lookOutlined"][class*="colorGreen"]:active {
+    background-color: rgb(28, 207, 28);
+    border-color: rgb(20, 148, 20);
+}
+
+/* TODO: Look into these powercord stuff and possibly remove them? */
+.powercord-toast .header .dismiss{
+    transition: 0s !important;
+}
+.powercord-toast .header .dismiss:hover{
+    color: rgb(238, 54, 54);
+}
+
+[class^="topSectionPlaying"] {
+    background: var(--The-181818);
+}
+
+.theme-dark [class^="option"][class*="selected"] {
+    background-color: var(--background-primary);
+}
+.theme-dark [class^="option"][class*="selected"]:after {
+    background: var(--background-primary);
+}
+
+[class^="clear"][class*="iconLayout"]:hover [class^="icon"]:hover {
+    color: rgb(238, 54, 54);
+}
+
+[class^="headerPlaying"] {
+    background: var(--The-181818);
+}
+
+[class^="input"][class*="focused"], [class^="input"]:focus {
+    border-color: var(--The-102);
+}
+
+/* TODO: Bot tags died */
+[class^="botTagRegular"] {
+    background: var(--The-94);
+}
+
+[class^="uploadModal"] [class^="inner"] {
+    background-color: var(--background-primary);
+}
+
+[class^="wrapper"][class*="selected"] [class^="childWrapper"], [class^="wrapper"]:hover [class^="childWrapper"] {
+    background-color: var(--childWrapper-1j_1ub);
+}
+
+[class^="inspector"] {
+    background-color: var(--background-secondary) !important;
+}
+
+[class^="barButtonBase"] {
+    background-color: var(--background-secondary);
+}
+
+[class^="jumpToPresentBar"] {
+    background-color: var(--background-secondary);
+}
+
+/* TODO: Bot tags died */
+[class^="botTagInvert"] {
+    color: #fff;
+    background: var(--The-94);
+}
+
+.theme-dark [class^="queryContainer"] {
+    background-color: var(--background-text-area);
+}
+.theme-dark [class^="queryContainer"]:hover {
+    background-color: var(--background-secondary);
+}
+
+.theme-dark [class^="tooltipPrimary"] [class^="tooltipPointer"] {
+    background-color: var(--ToolTip) !important;
+}
+[class^="tooltip"] {
+    background-color: var(--ToolTip) !important;
+}
+
+/* TODO: Verify calender picker works (there's a calender in discord?) */
+.theme-dark [class^="calendarPicker"] [class$="-datepicker"] {
+    background-color: var(--background-text-area);
+}
+.theme-dark [class^="datePicker-"] [class^="datePickerHint"] {
+    background-color: var(--background-text-area);
+}
+/* I don't this works, I definitely messed up the css selectors */
+.theme-dark [class^="calendarPicker"] [class*="datepicker"][class*="day"][class*="selected"]:after {
+    background-color: var(--background-text-area);
+}
+.theme-dark [class^="calendarPicker"] [class*="datepicker"][class*="day"][class*="selected"]:hover, .theme-dark [class^="calendarPicker"] [class*="datepicker"][class*="day"]:hover {
+    background-color: var(--The-92);
+}
+.theme-dark [class^="calendarPicker"] [class^="datePickerHint"] [class^="hintValue"] {
+    background-color: var(--background-primary);
+}
+.theme-dark [class^="calendarPicker"] [class^="datePickerHint"] [class^="hintValue"]:hover {
+    background-color: var(--The-85);
+}
+.theme-dark [class^="calendarPicker"] [class*="datepicker"][class$="current-month"] {
+    background-color: var(--background-text-area);
+}
+.theme-dark [class^="calendarPicker"] [class*="datepicker"][class$="day-name"] {
+    background-color: var(--background-text-area);
+}
+.theme-dark [class^="datePicker"] {
+    background-color: var(--background-text-area);
+}
+.theme-dark [class^="calendarPicker"] [class*="datepicker"][class$="header"] {
+    background-color: var(--background-text-area);
+}
+.theme-dark [class^="calendarPicker"] [class*="datepicker"][class*="day"][class*="datepicker"][class*="day"][class*="disabled"], .theme-dark [class^="calendarPicker"] [class*="datepicker"][class*="day"][class*="datepicker"][class*="day"][class*="disabled"]:hover {
+    background-color: var(--The-49);
+}
+
+/* TODO: Scroller conflict */
+[class^="scroller"] {
+    background-color: var(--background-text-area);
+}
+
+[class^="unreadBottom"] [class^="unreadBar"] {
+    background-color: var(--The-48);
+}
+
+[class^="section"] {
+    background-color: var(--The-34);
+}
+
+/* TODO: Verify which selector is correct for .css-rzbxvl-option */
+/* [class^="friendsEmpty"], [class^="addInputWrapper"], [class^="bar"], [class^="css"] { */
+[class^="friendsEmpty"], [class^="addInputWrapper"], [class^="bar"], [class$="option"] {
+    background-color: var(--The-34);
+}
+
+/* TODO: Scroller conflict */
+[class^="noiseCancellationPopout"], [class^="scroller"] {
+    background-color: var(--background-primary);
+}
+
+/* TODO: Container conflict */
+/* TODO: Verify which selector is correct for .css-3vaxre-menu */
+/* [class^="sourceScroller"], .theme-dark [class^="container"], .theme-dark [class^="root"], [class^="root"], [class^="css"], .theme-dark [class^="container"] section, .theme-dark [class^="container"] [class^="header"] { */
+[class^="sourceScroller"], .theme-dark [class^="container"], .theme-dark [class^="root"], [class^="root"], [class$="menu"], .theme-dark [class^="container"] section, .theme-dark [class^="container"] [class^="header"] {
+    background-color: var(--background-text-area);
+}
+
+/* TODO: Check if there's a search, searchBox or searchBoxInput conflict? */
+[class^="search"] [class^="searchBox"] [class^="searchBoxInput"] {
+    color: #fff;
+}
+
+.theme-dark [class^="outer"][class*="active"], .theme-dark [class^="outer"][class*="interactive"]:hover {
+    background-color: var(--background-text-area);
+}
+
+[class^="emojiSection"] img {
+    margin: auto;
+    min-width: 80%;
+    height: auto !important;
+}
+
+[class^="emojiSection"] > [class^="noWrap"], [class^="emojiSection"]  {
+    flex: wrap;
+    flex-direction: column !important;
+}
+
+[class^="emojiName"] {
+    font-weight: 600;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* TODO: wut dis */
+.fa-wrench:before{
+    color: var(--The-555555);
+}
+
+
+/* WAH LABELS ARE BACK!! */
+
+/* Transparent Settings Screen */
+[class^="layers"]>[class^="layer"]:first-child {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+[class^="layers"]>[class^="layer"]:nth-child(2), [class^="perksModal"] {
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    backdrop-filter: blur(10px);
+}
+[class^="contentRegionScroller"], [class^="contentRegion"], [class^="standardSidebarView"], [class^="sidebarRegionScroller"] {
+    background: transparent;
+}
+
+/* Transparent Settings Screen End (or did it?) */
+[class^="accountList"] {
+    background-color: rgba(51, 51, 51, 0.582);
+}
+[class^="connectionHeader"] {
+    background-color: rgba(51, 51, 51, 0.582);
+}
+[class^="scroller"] {
+    background: transparent;
+}
+
+/* Server settings - Emoji Hover */
+.theme-dark [class^="card"]:before {
+    background-color: #00000062;
+    border-color: #272727;
+}
+.theme-dark [class^="emojiAliasInput"] [class^="emojiInput"] {
+    background-color: var(--background-primary);
+}
+/* Server settings - Emoji Hover End */
+
+/* Server Boosting Settings */
+/* TODO: I think server bossting died */
+.theme-dark [class^="tierBody"] {
+    background-color: #2727273a;
+    color: #b9bbbe;
+}
+[class^="tierHeaderContent"] {
+    background-color: #2c2c2c;
+}
+/* Server Boosting Settings End */
+
+/* Reactions Box */
+[class^="reactors"] {
+    background-color: var(--background-primary) !important;
+}
+.theme-dark [class^="scroller"] {
+    background: var(--background-secondary);
+}
+/* Reactions Box End */
+
+/* Reactions Buttons */
+[class^="reaction"][class*="reactionMe"] {
+    background-color: rgb(80, 80, 80) !important;
+}
+[class^="reactionMe"] [class^="reactionCount"], [class^="reactionMe"]:hover [class^="reactionCount"] {
+    color: var(--background-tertiary);
+}
+/* Reactions Buttons End */
