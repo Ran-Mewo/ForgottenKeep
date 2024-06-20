@@ -8,7 +8,13 @@ But anyway I'd love some help on porting this theme to newer versions
 Lines 849/849 (100%) have been tried to be ported so far.\
 *I am just making the lines use the css selectors, after doing it I'll go over the code and check if it works and fix the parts that don't*
 
-Aight now that everything has been tried to be ported to CSS Selectors, it's time to see how much of it is broken
+Aight now that everything has been tried to be ported to CSS Selectors, it's time to see how much of it is broken\
+Update: Everything is broken.
+
+## TODO:
+- [x] Change the code to mostly use CSS Selectors
+- [ ] Fix the broken code
+  - [ ] First lets move over to use SCSS and more organization
 
 ## Still trying to migrate very old CSS code
 Who knows what those ancient hieroglyphics meant?
