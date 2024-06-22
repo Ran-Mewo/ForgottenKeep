@@ -1,0 +1,142 @@
+@import "variables";
+
+// Change selection colors? idk what this
+// TODO: I don't think this code is working
+.theme-dark [class^="selected"] {
+    background-color: $background-text-area !important;
+    transition: all 0.2s;
+}
+.theme-dark [class^="selected"]:hover {
+    background-color: $selected-hover !important;
+}
+.theme-dark [class^="selected"]:active {
+    background-color: $selected-active !important;
+}
+
+// Spoilered Text
+.theme-dark [class^="spoilerContent"][class*="hidden"] {
+    background-color: $spoilerText !important;
+    transition: all 0.2s;
+}
+.theme-dark [class^="spoilerContent"][class*="hidden"]:hover {
+    background-color: $spoilerText-hover !important;
+}
+
+// The text area (The message box where you type your uwu and owo words for everyone to see!)
+.theme-dark [class^="scrollableContainer"] {
+    background-color: $background-text-area;
+    transition: all 0.2s;
+}
+.theme-dark [class^="scrollableContainer"]:hover {
+    background-color: $container-hover;
+}
+.theme-dark [class^="scrollableContainer"]:active {
+    background-color: $container-active;
+}
+
+// The buttons that show up when you hover over a message
+// Default discord's opacity is 0.9
+// TODO: Try to remove the `_` by having more precise selectors, example: like looking for parent's classes, like in the css for `searchBox` the class `upperContainer` makes the selection more precise as it's a parent class
+[class^="message_"][class*="selected"] [class^="buttons_"], .mouse-mode [class^="message_"]:hover [class^="buttons_"] {
+    opacity: 2;
+    pointer-events: auto;
+}
+
+// TODO: Figure out what this meant in order to make it work
+//.theme-dark .container-YkUktl, .container-YkUktl .avatar-1EWyVD {
+//    -ms-flex-negative: 0;
+//    flex-shrink: 0;
+//    background-color: var(--container-avatar);
+//}
+
+// TODO: Figure out what this meant and does this even work?
+//.theme-dark .selected-1-Z6gm .layout-1qmrhw {
+//    background-color: var(--layout-selected);
+//    border-radius: 4px;
+//}
+//.theme-dark .clickable-28SzVr:hover .layout-1qmrhw {
+//    background-color: var(--background-modifier-hover);
+//    cursor: pointer;
+//    border-radius: 4px;
+//}
+.theme-dark [class^="selected-"] [class^="layout-"] {
+    background-color: $layout-selected;
+    border-radius: 4px;
+}
+.theme-dark [class^="clickable-"]:hover [class^="layout-"] {
+    background-color: $container-hover;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+// Search box for messages
+[class^="upperContainer"] [class^="search"] {
+    [class^="search"] [class^="searchBar"] {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        height: 24px;
+        width: 144px;
+        border-radius: 4px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        cursor: text;
+        overflow: hidden;
+        padding: 0 2px;
+        color: var(--text-normal);
+        background-color: $background-text-area;
+    }
+
+    [class^="search"] [class^="searchBar"]:hover {
+        background-color: $searchBar-hover;
+    }
+
+    [class^="search"][class*="focused"] [class^="searchBar"], [class^="search"][class*="open"] [class^="searchBar"] {
+        width: 240px;
+        background-color: $searchBar-open;
+    }
+}
+
+// Buttons (I think) TODO: Figure why it no work and also remove the brand stuff in '_variables.scss' when testing
+//[class^="lookFilled"][class*="colorBrand"] {
+//    color: #fff;
+//    background-color: $lookFilled-colorBrand
+//}
+//[class^="lookFilled"][class*="colorBrand"]:hover {
+//    color: #fff;
+//    background-color: $lookFilled-colorBrand-hover;
+//}
+//[class^="lookFilled"][class*="colorBrand"]:active {
+//    color: #fff;
+//    background-color: rgb(28, 207, 28);
+//}
+
+//.colorDefault-CDqZdO.focused-3qFvc8 {
+//    background-color: var(--background-primary);
+//    color: #fff;
+//}
+//.colorDefault-CDqZdO.focused-3qFvc8:active {
+//    background-color: var(--background-text-area);
+//    color: #fff;
+//}
+//.colorDefault-CDqZdO.focused-3qFvc8:focus {
+//    background-color: var(--background-text-area);
+//    color: #fff;
+//}
+[class^="colorDefault"][class*="focused"] {
+    background-color: $background-primary;
+    color: #fff;
+}
+[class^="colorDefault"][class*="focused"]:active {
+    background-color: $background-text-area;
+    color: #fff;
+}
+[class^="colorDefault"][class*="focused"]:focus {
+    background-color: $background-text-area;
+    color: #fff;
+}

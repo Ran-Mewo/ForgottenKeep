@@ -1,0 +1,50 @@
+@import "variables";
+
+// Profile Badge Hover Effect (`profileBadges` is class for the user profile popout badges and `badgeList` is the class that's used everywhere else where badges are shown)
+// TODO: Make it work in the settings panel
+.theme-dark [class^="profileBadges"] [class^="anchor"], [class^="badgeList"] [class^="anchor"] {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50%;
+	cursor: pointer;
+	width: 24px;
+	transition: all 0.2s;
+	height: 24px;
+}
+.theme-dark [class*="profileBadges"] [class^="anchor"]:hover, [class^="badgeList"] [class^="anchor"]:hover {
+	transform: scale(0.8);
+}
+
+// Close button
+[class^="closeButton"] {
+	border-color: #72767d;
+}
+[class^="closeButton"]:hover {
+	background-color: rgb(248, 54, 54);
+	border-color: rgb(248, 54, 54);
+}
+.theme-dark [class^="closeIcon"]:hover {
+	color: red;
+}
+[class^="privateChannels"] [class^="scroller"] [class^="content"] [class^="channel"] { // Don't apply the effects to the close button on DMs
+	[class^="closeButton"]:hover {
+		background-color: inherit !important;
+		border-color: inherit !important;
+	}
+	[class^="closeButton"] [class^="closeIcon"]:hover { // This exists because I don't think the X icon should turn red when hovered over for DMs, but I am not sure
+		color: inherit !important;
+	}
+}
+[class^="close-"] {
+	height: 26px;
+	padding: 4px;
+	opacity: .5;
+	cursor: pointer;
+	border-radius: 3px;
+	color: var(--interactive-normal);
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+[class^="close-"]:hover {
+	color: rgb(248, 54, 54);
+}

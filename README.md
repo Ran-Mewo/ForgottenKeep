@@ -14,7 +14,8 @@ Update: Everything is broken.
 ## TODO:
 - [x] Change the code to mostly use CSS Selectors
 - [ ] Fix the broken code
-  - [ ] First lets move over to use SCSS and more organization
+  - [x] First lets move over to use SCSS and try to organize the code
+  - [x] Get something working at least
 
 ## Still trying to migrate very old CSS code
 Who knows what those ancient hieroglyphics meant?
